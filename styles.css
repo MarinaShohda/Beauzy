@@ -1,0 +1,1836 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    
+}
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+
+}
+
+a {
+    cursor: pointer;
+    color: #1f0315;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+/* ________________________navbar & header _________________ */
+nav {
+    background-color: #fff;
+    overflow: hidden;
+    transition: 0.4s;
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    z-index: 99;
+}
+nav .nav-items a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.brand-name-div {
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+.nav-items-minimized {
+    display: none;
+}
+.brand-name-minimized {
+    display: none;
+}
+.header  {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    color: rgba(255, 255, 255, 0.904);
+    background-color: #dc3545;
+    word-spacing: 0.20em;
+    font-size: 0.8rem;
+    /* font-weight: 500; */
+    margin-top: 3em;
+    padding: 0.4em;
+
+}
+.header .left-bts {
+
+    font-weight: 600;
+}
+.header span {
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+.header a {
+    color: rgba(255, 255, 255, 0.904);
+    font-weight: bold;
+    font-size: small;
+    display: inline-block;
+}
+.header  a:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.767);
+}
+
+.logo img {
+    width: 50%;
+}
+
+.brandname {
+    width: 100%;
+}
+
+
+/* ______________________ hero section_____________________ */
+
+body, html {
+    height: 100%;
+}
+.hero-image {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pics/aesthetic2.jfif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align:left;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+
+}
+.hero-text h1 {
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    line-height: 1.8;
+    text-shadow: 2px 2px 5px rgb(252, 123, 166);
+
+}
+.hero-text p {
+    font-weight: 500;
+    font-size: 1.5rem; 
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgb(252, 123, 166);
+    letter-spacing: 0.3rem;
+    word-spacing: 0.2rem;
+}
+
+
+/* ____________________________ best-sellers ____________________________ */
+#bestsellers .overlaybox {
+    position: relative;
+    margin-bottom: 2em;
+    /* text-align:left; */
+    
+}
+#bestsellers .overlayimage {
+    display: block;
+    padding: 1.5em;
+}
+#bestsellers .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+#bestsellers .overlaybox:hover .overlay {
+    opacity: 1;
+}
+#bestsellers .overlaybox p:hover {
+    cursor: pointer;
+}
+#bestsellers .perfumename {
+    font-size: 0.8rem;
+    position: absolute;
+    padding-left: 1.8em;
+}
+#bestsellers .heading p {
+    letter-spacing: 0.5em;
+    word-spacing: 0.6em;
+}
+#bestsellers .heading h2 {
+    letter-spacing: 0.1em;
+    word-spacing: 0.5em;
+}
+
+
+/* ___________________________________discover ___________________ */
+.discover  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/pics/hero1.jpg);
+    height: 50%;
+    /* background-image: url(/pics/treetrunck.png); */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+.discover-textbox p {
+    letter-spacing: 0.3em;
+    font-weight: bold;
+}
+.discover-textbox h3 a {
+    color: #f5eaea;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+}
+
+
+/* _______________________________ women/men/unixes  ___________________ */
+.explore {
+    text-align: center;
+    font-size: 0.2rem;
+    /* padding-top: 9em; */
+}
+.explore img {
+    width: 70%;
+    padding: 2em;
+    /* background-color: #504242; */
+}
+.women-section .right-side img {
+    width: 80%;
+    padding: 0;
+    padding-top: 5em;
+}
+.explore h5{
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    word-spacing: 0.5em;
+}
+.women-section h5 {
+    padding-top: 2.5em;
+    
+}
+.men-section h5,
+.unisex-section h5 {
+    padding-top: 3em;
+    margin-bottom: 1.5em;
+    
+}
+.men-section img,
+.unisex-section img {
+    width: 70%;
+}
+/* button  */
+.explore-btn {
+    margin: 1.5em 0;
+    letter-spacing: 0.2em;
+    font-style: italic;
+}
+.men-section .explore-btn,
+.unisex-section .explore-btn {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+.explore-btn  a {
+    margin: 2em 0em;
+    background-color: #f7d8d5;
+    padding: 0.8em 2.5em;
+    border-radius: 1em;
+    border: 0.1em solid rgb(187, 182, 182);
+}
+.explore-btn a:hover  {
+    background-color: #af1b3b;
+    color: #fff;
+}
+
+/* _________________________ index: pricelist _______________________ */
+
+.pricelist {
+    text-align: center;
+}
+.pricelist .box {
+    border-right: 1px solid rgba(109, 108, 108, 0.411);
+}
+.pricelist .img1 {
+    width: 40%;
+}
+.pricelist .img2 {
+    width: 25%;
+    margin-top: 0.3em;
+}
+.pricelist .img3 {
+    width: 23%;
+}
+.pricelist h2 {
+    letter-spacing: 0.18em;
+    word-spacing: 0.2em;
+    font-style: italic;
+    font-weight: 500;
+    text-shadow: 5px 5px 5px #f1daeb;
+    color: #504242;
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+}
+.pricelist p {
+    letter-spacing: 0.15em;
+    font-size: 1.1rem;
+    margin-top: 1em ;
+    margin-bottom: 1em ;
+}
+.pricelist .order-now {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.8em;
+    margin-bottom: 1em;
+}
+.pricelist .order-now a {
+    padding-top: 0.6em;
+    padding-left: 0.7em;
+}
+
+.pricelist .fa-whatsapp {
+    color: #25D366;
+}
+
+/* _________________________________footer ____________________ */
+footer {
+    background-image: url(/pics/pinkbottle.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    margin-top: 2em;
+    /* background-color: #504242; */
+}
+footer .img1 {
+    width: 50%;
+    margin-bottom: 0.8em;
+    
+}
+footer .img2 {
+    width: 50%;
+    padding: 0 1em;
+}
+footer .links {
+    margin-right: 1em;
+}
+footer h6 {
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+}
+footer .social-media h6{
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+}
+footer ul a:hover {
+    border-bottom: 2px solid #f5466c;
+}
+.footer ul a:hover {
+    border-bottom: 2px solid #f5466c;
+    color: #000000;
+
+}
+footer .social-media i {
+    margin-left: 0.5em;
+}
+.fa-brands {
+    color: #0000009f;
+}
+
+.fa-facebook:hover {
+    color: rgb(30, 30, 156);
+}
+.fa-instagram:hover {
+    color: #fa2d7bd7;
+}
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+
+/* __________________perfumes pages __________________ */
+
+#perfume-page {
+    margin: 4em 5em;
+    padding: 5em;
+}
+
+#perfume-page .slider {
+    text-align: center;
+    padding-right: 3em;
+}
+#perfume-page img {
+    max-width: 330px;
+}
+
+
+.name-when-minimized {
+    display: none;
+}
+.perfume-details {
+    padding-left: 4em;
+    padding-right: 2em;
+}
+.name-and-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* carolina herera  */
+.perfumes-body h4 a {
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+    
+.perfumes-body h4 a:hover {
+    color: #f5466c;
+    text-shadow: 1px 1px red;}
+
+/* price  */
+.perfumes-body .price {
+    padding: 0.5em 1.5em;
+    border-radius: 0.2em;
+}
+
+.perfumes-body h1 {
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif; 
+
+}
+
+/* for him */
+.perfumes-body h5 a {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #000000;
+}
+
+/* for him: hover  */
+.perfumes-body h5 a:hover {
+    color: #f31a3f;
+    text-shadow: 1px 1px red;
+}
+
+
+/* 100ml */
+#perfume-page .lined-box {
+    display: inline;
+    padding: 0.5em 1.2em;
+    background-color: #fff;
+    border: 0.1em solid #0000001e;
+    border-radius: 0.4em;
+    margin-right: 1em;
+}
+#perfume-page .ordernow {
+    display: flex;
+    padding-top: 2em;
+}
+
+.ordernow p {
+    padding-right: 0.5em;
+    padding-top: 0.7em;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.buynow-whatsapp {
+    color: #25D366;
+
+
+}
+/* _________________________________ brands __________________________________________________ */
+#brands {
+    margin-top: 3em;
+    text-align: center;
+    
+}
+#brands .brandname {
+    width: 50%;
+    margin: 0 auto;
+
+}
+#brands .brandname img {
+    width: 50%;
+    margin-top: 3em;
+}
+#brands .brandname p {
+    margin-top: 1.5em;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+#brands .container {
+    margin-top: 3em;
+}
+#brands .items {
+    display: flex;
+    justify-content: space-evenly;  
+}
+#brands .items img {
+    width: 50%;
+}
+#brands .zoombox {
+    overflow: hidden;
+}
+#brands .zoom {
+    transition: transform 0.2s;
+    
+}
+#brands .zoom:hover {
+    transform: scale(1.2);
+}
+
+
+.findmore-container  {
+    /* margin: 0 auto; */
+    margin-top: 5em;
+    background-color: #fff8f8;
+    text-align: center;
+    
+
+}
+.findmore-container  .textbox p {
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    padding-top: 2em;
+}
+.findmore-container  .textbox  h2 {
+    letter-spacing: 0.25em;
+}
+
+.findmore-container .items {
+    padding: 4em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.findmore-container .item {
+    width: 15%;
+}
+.findmore-container .items p {
+    letter-spacing: 0.05em;
+    word-spacing: 0.3em;
+    margin-top: 2em;
+
+}
+
+.findmore-container img {
+    border-radius: 0.6em;
+    width: 100%;
+
+}
+
+/* ________________________________ women/mwn /unisex __________________________________ */
+#womenpage,
+#menpage,
+#unisexpage,
+#brandspage  {
+    margin-top: 3em;
+    text-align: center;
+    margin: 0 auto;
+}
+#womenpage .intro p, 
+#menpage .intro p, 
+#unisexpage .intro p, 
+#brandspage .intro p {
+    text-transform: uppercase;
+    letter-spacing: 0.4em;
+    word-spacing: 0.5em;
+    font-style: italic;
+    padding-top: 1.5em;
+    font-size: 1.1rem;
+}
+#womenpage h6, 
+#menpage h6, 
+#unisexpage h6, 
+#brandspage h6 {
+    letter-spacing: 0.15em;
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 1em;
+}
+#womenpage .perfume-rows, 
+#menpage .perfume-rows, 
+#unisexpage .perfume-rows,
+#brandspage .perfume-rows{
+    /* background-color: rgb(250, 209, 194); */
+    
+    margin-top: 2em;
+    padding-left: 3em;
+    padding-right: 3em;
+}
+#womenpage .perfume, 
+#menpage .perfume, 
+#unisexpage .perfume,
+#brandspage .perfume {
+    margin-bottom: 5em;
+
+}
+#womenpage .perfume p, 
+#menpage .perfume p, 
+#unisexpage .perfume p{
+    word-spacing: 0.1em; 
+    font-size: 1.1em;
+    padding-top: 2em;
+
+}
+#womenpage img,
+#menpage img,
+#unisexpage img,
+#brandspage img {
+    width: 40%;
+}
+#womenpage .zoombox, 
+#menpage .zoombox, 
+#unisexpage  .zoombox{
+
+    overflow: hidden;
+    margin-bottom: 0.2em;
+}
+#womenpage .zoom, 
+#menpage .zoom, 
+#unisexpage .zoom {
+    transition: transform 0.2s;
+    
+}
+#womenpage .zoom:hover, 
+#menpage .zoom:hover, 
+#unisexpage .zoom:hover{
+    transform: scale(1.2);
+}
+
+
+/* ___________________________________ returns  ___________________ */
+
+.returns {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pics/sadcat.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.returns-text {
+    text-align:left;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    transform: translate(-30%, -30%);
+    color: #fff;
+    /* background-color: #af1b3b; */
+
+  }
+.returns-text h2, p     {
+    font-style: italic;
+
+  }
+  .returns-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    line-height: 1.8;
+  }   
+  .returns-text p {
+    font-weight: 500;
+    font-size: 1.7em;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+  }
+
+/* _____________________________ fqas ___________________ */
+.faqs {
+    min-height: 100vh;
+    text-align: left;
+    margin-top: 5em;
+    background-image: url(/pics/flower.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: left center;
+    padding-left: 5em;
+    padding-right: 5em;
+
+}
+
+.faqs article {
+    padding-bottom: 0.4em;
+}
+.faqs button {
+    background-color: #fff;
+    border: none;
+    margin-left: 2em;
+    float: right;
+    padding-right: 10em;
+    /* background-color: rgba(243, 211, 238, 0.616); */
+
+    
+}
+.faqs i {
+    /* background-color:rgba(235, 194, 208, 0.24); */
+    color: #d45b67;
+}
+.faqs i:hover {
+    color: #a51524;
+    transform:  rotate(180deg);
+    transition-duration: 0.5s;
+
+}
+.faqs h2 {
+    padding-bottom: 1em;
+}
+.faqs .question-title h4{
+    font-size: 1.2rem;
+    display: inline-block;
+    font-weight: 500;
+    font-style: italic;
+    color: #000000d7;
+}
+.faqs p {
+    /* background-color: #f5466c; */
+    font-size: 1em;
+    padding-right: 5em;
+    padding-left: 1em;
+    color: #000000a9;
+}
+.faqs .question-answer {
+    display: none;
+}
+.faqs .minus {
+    display: none;
+}
+.show-answer .question-answer {
+    display: block;
+}
+.show-answer .minus {
+display: inline;
+}
+.show-answer .plus {
+    display: none;
+}
+/* _____________________________ about ___________________ */
+
+.about-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(/pics/aesthetic2.jfif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about-text {
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: #fff;
+    text-align: center;
+
+}
+.about-text h2 {
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    line-height: 1.8;
+    text-shadow: 2px 2px 5px rgb(116, 8, 44);
+    text-transform: uppercase;
+
+}
+
+.about-text p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    font-style: italic;
+
+}
+
+/* ************************************************** */
+  
+/* phones */
+@media only screen and (max-width: 290px){
+    /* navbar  */
+    .normal-navbar  {
+        display: none;   
+    }
+    .brandname-minimized {
+        display: flex;
+        width: 95%;
+        min-width: 290px;
+        margin: 0.3em 0;
+    }
+    .brandname-minimized .left-bts img{
+        width: 200%;
+    }
+    .brandname-minimized .right-bts img {
+        margin-left: 4em;
+        padding-top: 0.3em;
+        /* width: 250%; */
+        width: 30px;
+    }
+
+    /* nav items */
+    .nav-items-minimized {
+        background-color: #e9c0be7a;
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav-items-minimized .right-bts {
+        display: none;
+    }
+    .nav-items-minimized .left-bts {
+        width: 100%;
+    }
+
+    .nav-items-minimized a {
+        font-size: 0.6rem;
+        margin: 0.5em 0;
+        margin-right: 1em;
+    }
+    .nav-items-minimized p {
+        margin-top: 0.6em;
+    }
+
+    /* header  */
+    .header {
+        margin-top: 5em;
+        /* font-size: 0.1rem; */
+    }
+    .header span  {
+        font-size: 0.6rem;
+    }
+    .header .right-bts {
+        display: none;
+    }
+
+    /* discover section */
+    .discover-textbox h3 a {
+        font-size: 1rem;
+    }
+
+    
+    /* women/men/unisex */
+    .explore {
+        text-align: center;
+    }
+    .explore h5 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        font-size: 1.2rem;
+    }
+    .explore img {
+        padding: 0;
+    }
+    .women-section .left-side img {
+        width: 90%;
+    }
+    .women-section .right-side img {
+        padding-top: 2em;
+        width: 100%;
+    }
+    .women-section .explore-btn {
+        margin-top: 4em;
+    }
+    .men-section img,
+    .unisex-section img{
+        width: 100%;
+    }
+    .explore-btn a {
+        padding: 0.em 1em;
+    }
+    .men-section ,
+    .unisex-section {
+       margin-top: 3em;
+    }
+
+
+    /* footer */
+    footer {
+        background-size: 35%;
+    }
+    footer .categories,
+    footer .links,
+    footer .contact-us {
+        display: none;
+    }
+    footer .logo-moto {
+        width: 100%;
+    }
+
+    footer img {
+        width: 50%;
+    }
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+  
+    /* __________about page_________  */
+    .about-image h2 {
+        font-size: 1.7rem;
+    }
+    .about-image p {
+        font-size: 1rem;
+    }
+
+    /* __________ returns page_________  */
+    #returnspage  h2 {
+        padding-left: 2em;
+        font-size: 1.3rem;
+    }
+    #returnspage  p {
+        padding-left: 2em;
+        font-size: 1rem;
+    }
+
+    /* __________ FAQs page_________  */
+    .faqs {
+        text-align: left;
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+    }
+    .faqs .question-title {
+        display: flex;
+        justify-content:space-between;
+    }
+    .faqs h2 {
+        font-size: 1.2rem;
+        padding-bottom: 0.8em;   
+    }
+    .faqs h4 {
+        font-size: 0.9rem;
+       
+    }
+    .faqs p {
+        font-size: 0.9rem;
+        padding-left: 0.5em;   
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .faqs button {
+        padding-right: 0;   
+        margin-right: 0.5em;
+        /* background-color: rgba(243, 211, 238, 0.616); */
+    }
+    .faqs .question {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+   /* __________ wome/men/unisex pages_________  */
+    #womenpage,
+    #menpage,
+    #unisexpage,
+    #brandspage  {
+        margin-top: 1em;
+    }
+
+    #womenpage h6, 
+    #menpage h6, 
+    #unisexpage h6, 
+    #brandspage h6 {
+        font-size: 1.5rem;
+    }
+    #womenpage .perfume,
+    #menpage .perfume,
+    #unisexpage .perfume,
+    #brandspage .perfume {
+        width: 100%;
+    }
+    #womenpage img,
+    #menpage img,
+    #unisexpage img,
+    #brandspage img {
+        width: 100%;
+    }
+   /* __________ single perfume pages_________  */
+   #perfume-page {
+        margin: 2em 0.5em;
+        padding: 0;
+    }
+    .name-when-minimized {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+    #perfume-page .slider {
+        display: block;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 5em;
+        margin-bottom: 2em;
+    }
+
+
+ 
+    #perfume-page .carousel {
+        width: 80%;
+    }
+    #perfume-page .slider img {
+        width: 100%;
+    }
+   .perfume-details {
+        padding-left: 1em;
+        padding-right: 1.7em;
+        width: 100%;
+   }
+    .perfume-details h1 {
+        display: none;
+    }
+    .perfumes-body h4 {
+        margin-top: 0.5em;
+    }
+    #perfume-page .lined-box  {
+        margin-right: 0.6em;
+    }
+
+
+
+    /* single brand page  */
+    #brands {
+        margin-top: 0em;
+    }
+    #brands .brandname {
+        width: 70%;    
+    }
+    #brands .brandname img {
+        width: 100%;
+    }
+    #brands .brandname p {
+        margin-top: 1.2em;
+        font-size: 1rem;
+    }
+    #brands .perfume {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    #brands .items img {
+        width: 80%;
+        /* min-width: 100px; */
+    }
+
+    #brands .textbox p,
+    #brands .textbox a h5 b {
+        font-size: 1rem;
+    }
+
+    .findmore-container .items {
+        padding: 0em;
+        padding-top: 3em;
+    }
+    .findmore-container .item {
+        width: 30%;
+    }
+    .findmore-container .item p {
+        font-size: 0.8rem;
+    }
+}
+
+
+
+
+
+
+
+/* 2. phones */
+@media (min-width: 290px) and (max-width: 600px) {
+    .normal-navbar  {
+        display: none;   
+    }
+    .brandname-minimized {
+        display: flex;
+        width: 95%;
+        min-width: 360px;
+        max-width: 672px;
+        margin: 0.3em 0;
+    }
+    .brandname-minimized .left-bts img{
+        width: 150%;
+    }
+    .brandname-minimized .right-bts img {
+        margin-left: 1.8em;
+        width: 30px;
+    }
+
+    /* nav items */
+    .nav-items-minimized .left-bts {
+        width: 100%;
+    }
+    .nav-items-minimized .right-bts {
+        display: none;
+    }
+    .nav-items-minimized {
+        background-color: #e9c0be7a;
+        display: flex;
+
+    }
+    .nav-items-minimized a {
+        font-size: 0.7rem;
+        padding: 1em 0em;
+        margin-left: 1em;
+    }
+
+    /******* header  ******/
+    .header {
+        margin-top: 5.3em;
+    }
+    .header .right-bts {
+        display: none;
+    }
+    .header span{
+        font-size: 0.7rem;
+    }
+
+    /* hero */ 
+    /* .hero-image {
+        background-size: contain;
+    } */ 
+    
+    /* bestsellers  */
+    #bestsellers img {
+        padding: 0.5em; 
+    }
+
+    /* women/men/unisex sections*/
+    .explore h5 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    } 
+    .explore img {
+        padding: 0;
+    }
+    .women-section .left-side img {
+        width: 90%;
+    }
+    .women-section .right-side img {
+        padding-top: 2em;
+        width: 100%;
+    }
+    .women-section .explore-btn {
+        margin-top: 4em;
+    }
+    .men-section img,
+    .unisex-section img{
+        width: 100%;
+    }
+    .explore-btn a {
+        padding: 0.em 1em;
+    }
+    .men-section ,
+    .unisex-section {
+       margin-top: 3em;
+    }
+
+
+    /* footer */
+    footer {
+        background-size: 35%;        
+    }
+    footer .logo-moto {
+        width: 100%;
+    }
+    footer .contact-us {
+        display: none;
+    }
+    footer .categories,
+    footer .links  {
+        width: 45%;
+    }
+    footer img {
+        width: 50%;
+        max-width: 120px;
+    }
+    footer a,
+    footer h6 {
+        font-size: 0.9rem;  
+    }
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+
+
+    /* __________about page_________  */
+    .about-image h2 {
+        font-size: 1.9rem;
+    }
+    .about-image p {
+        font-size: 1.2rem;
+    }
+
+    /* __________ returns page_________  */
+    #returnspage  h2 {
+        padding-left: 2em;
+        font-size: 1.5rem;
+    }
+    #returnspage  p {
+        padding-left: 2em;
+        font-size: 1.2rem;
+    }
+     /* __________ faqs page_________  */
+     .faqs {
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+    }
+    .faqs article {
+        /* background-color: rgba(243, 211, 238, 0.616); */
+        padding-left: 0.5em;
+    }
+    .faqs .question-title {
+        display: flex;
+        justify-content:space-between;
+    }
+    .faqs h2 {
+        font-size: 1.2rem;
+        padding-bottom: 0.8em;   
+    }
+    .faqs h4 {
+        font-size: 0.9rem;
+        padding-top: 0.3em;
+       
+    }
+    .faqs p {
+        font-size: 0.9rem;
+        padding-left: 0.5em;   
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .faqs button {
+        padding-right: 0;   
+        margin-right: 0.5em;
+        /* background-color: rgba(243, 211, 238, 0.616); */
+    }
+    .faqs .question {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+
+     /* __________ wome/men/unisex pages_________  */
+     #womenpage,
+     #menpage,
+     #unisexpage,
+     #brandspage  {
+         margin-top: 1em;
+     }
+ 
+     #womenpage h6, 
+     #menpage h6, 
+     #unisexpage h6, 
+     #brandspage h6 {
+         font-size: 1.5rem;
+     }
+     #womenpage .perfume,
+     #menpage .perfume,
+     #unisexpage .perfume,
+     #brandspage .perfume {
+         width: 45%;
+         margin-right: 0.5em;
+         /* background-color: aquamarine; */
+         overflow: hidden;
+     }
+     #womenpage img,
+     #menpage img,
+     #unisexpage img,
+     #brandspage img {
+         width: 100%;
+     }
+   /* __________ single perfume pages_________  */
+   #perfume-page {
+        margin: 2em 2em;
+        padding: 0;
+    }
+    .name-when-minimized {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+    #perfume-page .slider {
+        display: block;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 5em;
+        margin-bottom: 2em;
+        /* background-color: #25d36559; */
+    }
+    #perfume-page .carousel {
+        width: 100%;
+    }
+    #perfume-page .slider img {
+        width: 100%;
+        max-width: 305px;
+    }
+    .perfume-details {
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 2em;
+        
+    }
+    .perfume-details h1 {
+        display: none;
+    }
+    .perfumes-body h4 {
+        margin-top: 0.5em;
+    }
+    #perfume-page .lined-box  {
+        margin-right: 0.6em;
+    }
+
+    /* single brand page  */
+    #brands {
+        margin-top: 0em;
+    }
+    #brands .brandname {
+        width: 70%;    
+    }
+    #brands .brandname img {
+        width: 100%;
+        max-width: 245px;
+    }
+    #brands .brandname p {
+        margin-top: 1.2em;
+        font-size: 1rem;
+    }
+    #brands .perfume {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        /* background-color: violet; */
+    }
+    #brands .items img {
+        width: 100%;
+        max-width: 115px;
+    }
+    #brands .textbox p,
+    #brands .textbox a h5 b {
+        font-size: 1rem;
+    }
+
+    .findmore-container .items {
+        padding: 0em;
+        padding-top: 3em;
+    }
+    .findmore-container .item {
+        width: 30%;
+    }
+    .findmore-container .item p {
+        font-size: 1rem;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 460px) and (max-width: 600px){
+    /* __________ wome/men/unisex pages_________  */
+    #womenpage .perfume,
+    #menpage .perfume,
+    #unisexpage .perfume,
+    #brandspage .perfume {
+        width: 31%;
+        margin-right: 0.5em;
+        /* background-color: aquamarine; */
+        overflow: hidden;
+         
+     }
+
+}
+
+/****************************** tablests */
+@media (min-width: 601px) and (max-width: 1199px) {
+    
+    /* navbar  */
+    .normal-navbar  {
+        display: none;   
+    }
+    .brandname-minimized {
+        display: flex;
+        width: 95%;
+        max-width: 672px;
+        margin: 0.3em 0;
+    }
+    .brandname-minimized .left-bts img{
+        padding-top: 0.4em;
+        width: 150%;
+    }
+    .brandname-minimized .right-bts img {
+        margin-left: 1.5em;
+        width: 40px;
+    }
+
+    /* nav items */
+    .nav-items-minimized {
+        background-color: #e9c0be7a;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-items-minimized .left-bts {
+        width: 75%;
+    }
+    .nav-items-minimized a {
+        font-size: 0.8rem;
+        padding: 1em 0em;
+        margin-left: 1em;
+    }
+    .nav-items-minimized p {
+        padding-top: 0.6em;
+    }
+
+    /******* header  ******/
+    .header {
+        margin-top: 7em;
+    }
+    .header .right-bts {
+        display: none;
+    }
+    .header span{
+        font-size: 0.8rem;
+    }
+    .explore .left-side img {
+        width: 100%;
+        max-width: 290px;
+    }
+    .explore .right-side img {
+        padding-top: 2em;
+        width: 150%;
+        max-width: 166px;
+
+    }
+    .explore .right-side .title {
+        padding-left: 0.7em;
+        text-align: center;
+    }
+
+    /* women/men/unisex */
+    .explore h5 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    } 
+    .explore img {
+        padding: 0;
+    }
+    .women-section .left-side img {
+        width: 90%;
+    }
+    .women-section .right-side img {
+        padding-top: 2em;
+        width: 100%;
+    }
+    .women-section .explore-btn {
+        margin-top: 4em;
+    }
+    .men-section img,
+    .unisex-section img{
+        width: 100%;
+    }
+    .explore-btn a {
+        padding: 0.em 1em;
+    }
+    .men-section ,
+    .unisex-section {
+       margin-top: 3em;
+    }
+
+    /* pricelist */
+    .pricelist .img1 {
+        width: 30%;
+    }
+    .pricelist .img2 {
+        width: 20%;
+        margin-top: 0.8em;
+    }
+    .pricelist .img3 {
+        width: 20%;
+    }
+    .pricelist .order-now p a {
+        font-size: 1.3em;
+    }
+    .pricelist .order-now a {
+        padding-top: 01em;
+    }
+    
+    /* footer */
+    footer {
+        background-size: 35%;        
+    }
+    footer .logo-moto {
+        width: 100%;
+    }
+    footer .contact-info {
+        display: none;
+    }
+
+    footer .categories,
+    footer .links,
+    footer .contact-us  {
+        width: 28%;
+    }
+    footer img {
+        width: 50%;
+        max-width: 150px;
+    }
+    footer a,
+    footer h6,
+    footer b {
+        font-size: 1rem;  
+    }
+    footer .social-media h6{
+        margin-top: 0em;
+
+    }
+    footer .social-media i {
+        margin-left: 0.2em;
+    }
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+    /* __________about page_________  */
+    .about-image h2 {
+        font-size: 2rem;
+    }
+    .about-image p {
+        font-size: 1.2rem;
+    }
+
+    /* __________ returns page_________  */
+    #returnspage  h2 {
+        padding-left: 2em;
+        font-size: 1.5rem;
+        /* background-color: #af1b3b; */
+    }
+    #returnspage  p {
+        padding-left: 2em;
+        font-size: 1.3rem;
+    }
+
+    /* __________ faqs page_________  */
+    .faqs {
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+    }
+
+    .faqs .question-title {
+        display: flex;
+        justify-content:space-between;
+    }
+    .faqs h2 {
+        font-size: 1.3rem;
+        padding-bottom: 0.8em;   
+        padding-top: 0.8em;   
+    }
+    .faqs h4 {
+        font-size: 1.1rem;
+        padding-top: 0.3em;
+       
+    }
+    .faqs p {
+        font-size: 1rem;
+        padding-left: 0.5em;   
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .faqs button {
+        padding-right: 0;   
+        margin-right: 0.5em;
+        /* background-color: rgba(243, 211, 238, 0.616); */
+    }
+    .faqs .question {
+        margin-bottom: 0.5em;
+        margin-top: 0.5em;
+    }
+  
+    /* __________ wome/men/unisex pages_________  */
+    #womenpage .perfume,
+    #menpage .perfume,
+    #unisexpage .perfume,
+    #brandspage .perfume {
+         width: 31%;
+         margin-right: 0.5em;
+         /* background-color: aquamarine; */
+         overflow: hidden;
+         
+     }
+     #womenpage img,
+     #menpage img,
+     #unisexpage img,
+     #brandspage img {
+         width: 100%;
+     }
+        /* __________ single perfume pages_________  */
+   #perfume-page {
+        margin: 3em 2em;
+        padding: 0;
+    }
+    .name-when-minimized {
+        display: none;
+    }
+    #perfume-page .slider {
+        /* background-color: aqua; */
+        /* padding-left: 2em; */
+        padding-right: 0;
+        margin-top: 2em;
+    }
+    #perfume-page .carousel {
+        width: 95%;
+    }
+    #perfume-page .slider img {
+        width: 100%;
+        max-width: 330px;
+    }
+    .perfume-details {
+        /* background-color: #d45b67; */
+        padding-left: 1em;
+        padding-right: 1.7em;
+        width: 45%;
+    }
+    #perfume-page .name-and-price {
+        display: block;
+    }
+
+    .perfume-details h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1em;
+    }
+    .perfumes-body h4 {
+        margin-top: 0.5em;
+    }
+    #perfume-page .lined-box  {
+        margin-right: 0.3em;
+    }
+
+
+        /* single brand page  */
+        #brands {
+            margin-top: 2em;
+        }
+        #brands .brandname {
+            width: 50%;    
+        }
+        #brands .brandname img {
+            width: 100%;
+            max-width: 270px;
+        }
+        #brands .brandname p {
+            margin-top: 1.3em;
+            font-size: 1.1rem;
+        }
+        #brands .perfume {
+            width: 30%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+            /* background-color: violet; */
+        }
+        #brands .items img {
+            width: 80%;
+            max-width: 115px;
+        }
+
+        #brands .textbox a h5 b{
+            font-size: 1.3rem;
+        }
+        #brands .textbox p{
+            font-size: 1.2rem;
+        }
+
+
+
+    
+        .findmore-container .items {
+            padding: 0em;
+            padding-top: 3em;
+        }
+        .findmore-container .item {
+            width: 25%;
+        }
+        .findmore-container .item p {
+            font-size: 1rem;
+        }
+    
+
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* add padding to images in the men/unisex section  */
+    .men-section img, 
+    .unisex-section img {
+        padding: 1.5em;
+    }
+
+    /* __________ wome/men/unisex pages_________  */
+    #womenpage img,
+    #menpage img,
+    #unisexpage img,
+    #brandspage img {
+        width: 70%;
+    }
+    /* __________ single perfume pages_________  */
+    #perfume-page {
+        margin: 4em 1em;
+        padding: 0;
+        width: 95%;
+    }
+    .perfume-container {
+        padding-right: 0;
+        margin-right: 0;
+    }
+    #perfume-page .slider {
+        padding-right: 2em;
+        padding-left: 2em;
+        margin-top: 2em;
+        width: 45%;
+    }
+    .perfume-details {
+        padding-left: 1em;
+        padding-right: 0;
+        margin-right: 0;
+        width: 45%;
+    }
+ /* __________ single brand pages_________  */
+    #brands .items img {
+        width: 80%;
+    }
+    .findmore-container .item {
+        width: 20%;  
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* add padding to images in the men/unisex section  */
+
+    .men-section img, 
+    .unisex-section img {
+        padding: 3em;
+    }
+    /* __________ wome/men/unisex pages_________  */
+    #womenpage img,
+    #menpage img,
+    #unisexpage img,
+    #brandspage img {
+        width: 60%;
+    }
+     /* __________ single brand pages_________  */
+     #brands .brandname img {
+        width: 50%;
+        margin-top: 2em;
+    }
+     #brands .items img {
+        width: 80%;
+    }
+    .findmore-container .item {
+        width: 17%;  
+    }
+    
+}
+
+
+
+
+
+
+
+/* laptops */
+@media only screen and (min-width: 1200px)  {
+    .brandname-minimized,
+    .nav-items-minimized {
+        display: none;
+    }
+
+    .women-section h5 {
+        padding-top: 4.5em; 
+    }
+
+    /* pricelist */
+    .pricelist {
+        margin: 0 auto;
+    }
+    .pricelist h2 {
+        margin-top: 3em;
+    }
+    .pricelist .img1 {
+        width: 20%;
+    }
+    .pricelist .img2 {
+        width: 17%;
+        margin-top: 0.8em;
+    }
+    .pricelist .img3 {
+        width: 17%;
+    }
+    .pricelist .order-now p a {
+        font-size: 1.3em;
+    }
+    .pricelist .order-now a {
+        padding-top: 1.1em;
+    }
+
+    /* __________ wome/men/unisex pages_________  */
+    #womenpage img,
+    #menpage img,
+    #unisexpage img,
+    #brandspage img {
+        width: 40%;
+    }
+
+ /* __________ single brand pages_________  */
+    #brands .items img {
+        width: 90%;
+    }
+    #brands .perfume {
+        width: 30%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+        /* background-color: violet; */
+    }
+    #brands .items img {
+        width: 80%;
+        max-width: 115px;
+    }
+
+
+
+
+}
