@@ -1,0 +1,175 @@
+
+footer {
+    background-image: url(/pics/pinkbottle.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+    margin-top: 2em;
+
+    .img1 {
+        width: 50%;
+        margin-bottom: 0.8em;
+        
+    }
+    .img2 {
+        width: 50%;
+        padding: 0 1em;
+    }
+
+    .links {
+        margin-right: 1em;
+    }
+
+    h6 {
+        text-transform: capitalize;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+
+    ul a:hover {
+        border-bottom: 2px solid #f5466c;
+        color: #000000;
+    }
+}
+
+footer .social-media {
+    h6{
+        margin-top: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    i {
+        margin-left: 0.5em;
+    }
+
+    .fa-brands {
+        color: #0000009f;
+    }
+    
+    .fa-facebook:hover {
+        color: rgb(30, 30, 156);
+    }
+
+    .fa-instagram:hover {
+        color: #fa2d7bd7;
+    }
+
+    .fa-whatsapp:hover {
+        color: #25D366;
+    }
+}
+
+
+
+
+// below phones
+@media only screen and (max-width: 290px){
+    footer {
+        background-size: 35%;
+
+        .categories,
+        .links,
+        .contact-us {
+            display: none;
+        }
+
+        .logo-moto {
+            width: 100%;
+        }
+
+        img {
+            width: 50%;
+        }
+    }
+
+
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+  
+}
+
+// phones
+@media (min-width: 290px) and (max-width: 600px) {
+    footer {
+        background-size: 35%;  
+
+        .logo-moto {
+            width: 100%;
+        }
+
+        .contact-us {
+            display: none;
+        }
+
+        .categories,
+        .links  {
+            width: 45%;
+        }
+
+        img {
+            width: 50%;
+            max-width: 120px;
+        }
+
+        a,
+        h6 {
+            font-size: 0.9rem;  
+        }
+    }
+
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+
+}
+
+/* tablests */
+@media (min-width: 601px) and (max-width: 1199px) {
+    footer {
+        background-size: 35%;   
+        
+        .logo-moto {
+            width: 100%;
+        }
+
+        .contact-info {
+            display: none;
+        }
+    
+        .categories,
+        .links,
+        .contact-us  {
+            width: 28%;
+        }
+
+        img {
+            width: 50%;
+            max-width: 150px;
+        }
+
+        a,
+        h6,
+        b {
+            font-size: 1rem;  
+        }
+    }
+
+    footer .social-media {
+        h6 {
+            margin-top: 0em;
+        }
+
+         i {
+            margin-left: 0.2em;
+        }
+    }
+
+    /* line */
+    .footer-line {
+        width: 70%;
+    }
+
+}
