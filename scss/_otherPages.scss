@@ -1,0 +1,451 @@
+// women, men, unisex & brands pages 
+#womenpage, #menpage, #unisexpage, #brandspage {
+    margin-top: 3em;
+    text-align: center;
+    margin: 0 auto;
+
+    .intro p {
+        text-transform: uppercase;
+        letter-spacing: 0.4em;
+        word-spacing: 0.5em;
+        font-style: italic;
+        padding-top: 1.5em;
+        font-size: 1.1rem;
+    }
+    h6 {
+        letter-spacing: 0.15em;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding: 1em;
+    }
+    .perfume-rows {    
+        margin-top: 2em;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .perfume {
+        margin-bottom: 5em;
+    }
+    img {
+        width: 40%;
+    }
+}
+#womenpage, #menpage, #unisexpage  {
+    .perfume p {
+        word-spacing: 0.1em; 
+        font-size: 1.1em;
+        padding-top: 2em;
+    }
+
+    .zoombox{
+        overflow: hidden;
+        margin-bottom: 0.2em;
+    }
+    .zoom {
+        transition: transform 0.2s;
+        
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+
+// returns page
+.returns {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pics/sadcat.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+
+    .returns-text {
+        text-align:left;
+        position: absolute;
+        top: 35%;
+        left: 20%;
+        transform: translate(-30%, -30%);
+        color: #fff;
+
+        h2, p {
+            font-style: italic;
+          }
+
+        h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        line-height: 1.8;
+        }   
+        p {
+        font-weight: 500;
+        font-size: 1.7em;
+        letter-spacing: 0.1em;
+        word-spacing: 0.2em;
+        }
+      }
+
+}
+
+
+// fqas page 
+.faqs {
+    min-height: 100vh;
+    text-align: left;
+    margin-top: 5em;
+    background-image: url(/pics/flower.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: left center;
+    padding-left: 5em;
+    padding-right: 5em;
+
+    article {
+        padding-bottom: 0.4em;
+    }
+    button {
+        background-color: #fff;
+        border: none;
+        margin-left: 2em;
+        float: right;
+        padding-right: 10em;
+    }
+    i {
+        color: #d45b67;
+        &:hover {
+            color: #a51524;
+            transform:  rotate(180deg);
+            transition-duration: 0.5s;
+        }
+    }
+    
+    h2 {
+        padding-bottom: 1em;
+    }
+    .question-title h4{
+        font-size: 1.2rem;
+        display: inline-block;
+        font-weight: 500;
+        font-style: italic;
+        color: #000000d7;
+    }
+    p {
+        font-size: 1em;
+        padding-right: 5em;
+        padding-left: 1em;
+        color: #000000a9;
+    }
+    .question-answer {
+        display: none;
+    }
+    .minus {
+        display: none;
+    }
+    .show-answer {
+        .question-answer {
+            display: block;
+        }
+        .minus {
+        display: inline;
+        }
+        .plus {
+            display: none;
+        }
+    }
+}
+
+
+// about page 
+.about-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), 
+    rgba(0, 0, 0, 0.5)), url(/pics/aesthetic2.jfif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.about-text {
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: #fff;
+    text-align: center;
+     h2 {
+        font-size: 3rem;
+        font-style: italic;
+        font-weight: bold;
+        letter-spacing: 0.15rem;
+        line-height: 1.8;
+        text-shadow: 2px 2px 5px rgb(116, 8, 44);
+        text-transform: uppercase;
+    }
+    p {
+        font-weight: 500;
+        font-size: 1.5rem;
+        font-style: italic;
+    }
+}
+
+
+// media quiries 
+// phones
+@media only screen and (max-width: 290px){
+// women, men, unisex & brands pages
+   #womenpage, #menpage, #unisexpage, #brandspage  {
+       margin-top: 1em;
+      h6 {
+           font-size: 1.5rem;
+       }
+       .perfume {
+           width: 100%;
+       }
+       img {
+           width: 100%;
+       }
+
+   }
+
+// about page
+    .about-image {
+        h2 {
+            font-size: 1.7rem;
+        }
+        .about-image p {
+            font-size: 1rem;
+        }
+    }
+
+// returns page
+    #returnspage {
+        h2 {
+            padding-left: 2em;
+            font-size: 1.3rem;
+        }
+        p {
+            padding-left: 2em;
+            font-size: 1rem;
+        }
+    }
+
+// fqas page 
+    .faqs {
+        text-align: left;
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+
+
+        .question-title {
+            display: flex;
+            justify-content:space-between;
+        }
+         h2 {
+            font-size: 1.2rem;
+            padding-bottom: 0.8em;   
+        }
+         h4 {
+            font-size: 0.9rem;
+        }
+        p {
+            font-size: 0.9rem;
+            padding-left: 0.5em;   
+            margin-top: 0;
+            padding-top: 0;
+        }
+        button {
+            padding-right: 0;   
+            margin-right: 0.5em;
+        }
+        .question {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
+        }
+    }
+}
+
+
+/* phones */
+@media (min-width: 290px) and (max-width: 600px) {
+// about page 
+    .about-image {
+        h2 {
+            font-size: 1.9rem;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+ // returns page
+    #returnspage  {
+        h2 {
+            padding-left: 2em;
+            font-size: 1.5rem;
+        }
+        p {
+            padding-left: 2em;
+            font-size: 1.2rem;
+        }
+    }
+// faqs page
+     .faqs {
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+
+        article {
+            padding-left: 0.5em;
+        }
+        .question-title {
+            display: flex;
+            justify-content:space-between;
+        }
+        h2 {
+            font-size: 1.2rem;
+            padding-bottom: 0.8em;   
+        }
+        h4 {
+            font-size: 0.9rem;
+            padding-top: 0.3em;
+        }
+         p {
+            font-size: 0.9rem;
+            padding-left: 0.5em;   
+            margin-top: 0;
+            padding-top: 0;
+        }
+         button {
+            padding-right: 0;   
+            margin-right: 0.5em;
+        }
+        .question {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
+        }
+    }
+// women, men, unisex & brands pages 
+#womenpage, #menpage, #unisexpage, #brandspage {
+         margin-top: 1em;
+
+        h6 {
+            font-size: 1.5rem
+        }
+        .perfume {
+            width: 45%;
+            margin-right: 0.5em;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+     }
+}
+@media (min-width: 460px) and (max-width: 600px){
+// women, men, unisex & brands pages 
+    #womenpage, #menpage, #unisexpage, #brandspage {
+        .perfume {
+            width: 31%;
+            margin-right: 0.5em;
+            overflow: hidden;
+        }
+     }
+}
+
+@media (min-width: 601px) and (max-width: 1199px) { 
+// about page 
+    .about-image h2 {
+        font-size: 2rem;
+    }
+    .about-image p {
+        font-size: 1.2rem;
+    }
+// returns page
+    #returnspage {
+        h2 {
+            padding-left: 2em;
+            font-size: 1.5rem;
+        }
+         p {
+            padding-left: 2em;
+            font-size: 1.3rem;
+        }
+    }
+// faqs page
+    .faqs {
+        margin-top: 1em;
+        padding-left: 0.5em;
+        padding-right: 0;
+
+        .question-title {
+            display: flex;
+            justify-content:space-between;
+        }
+        h2 {
+            font-size: 1.3rem;
+            padding-bottom: 0.8em;   
+            padding-top: 0.8em;   
+        }
+        h4 {
+            font-size: 1.1rem;
+            padding-top: 0.3em;
+           
+        }
+        p {
+            font-size: 1rem;
+            padding-left: 0.5em;   
+            margin-top: 0;
+            padding-top: 0;
+        }
+        button {
+            padding-right: 0;   
+            margin-right: 0.5em;
+        }
+        .question {
+            margin-bottom: 0.5em;
+            margin-top: 0.5em;
+        }
+    }
+// women, men, unisex & brands pages 
+    #womenpage, #menpage, #unisexpage, #brandspage {
+        .perfume {
+            width: 31%;
+            margin-right: 0.5em;
+            overflow: hidden;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    // women, men, unisex & brands pages 
+    #womenpage, #menpage, #unisexpage, #brandspage {
+        img {
+            width: 70%;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    // women, men, unisex & brands pages 
+    #womenpage, #menpage, #unisexpage, #brandspage {
+        img {
+            width: 60%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px)  {
+    // women, men, unisex & brands pages 
+    #womenpage, #menpage, #unisexpage, #brandspage {
+        img {
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,446 @@
+// hero section
+.hero-image {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/pics/aesthetic2.jfif);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-text {
+    text-align:left;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    color: #fff;
+    font-style: italic;
+    text-shadow: 2px 2px 5px rgb(252, 123, 166);
+
+
+    h1 {
+        font-size: 4rem;
+        font-weight: bold;
+        letter-spacing: 0.12em;
+        line-height: 1.8;
+    
+    }
+    h2 {
+        font-size: 1.5rem; 
+        font-weight: 500;
+        letter-spacing: 0.3rem;
+        word-spacing: 0.2rem;
+    }
+    
+}
+
+
+// best-sellers
+#bestsellers .heading {
+    p {
+        letter-spacing: 0.5em;
+        word-spacing: 0.6em;
+    }
+
+    h2 {
+        letter-spacing: 0.1em;
+        word-spacing: 0.5em;
+    }
+}
+#bestsellers .overlaybox {
+    position: relative;
+    margin-bottom: 2em;
+    
+
+    .overlayimage {
+        display: block;
+        padding: 1.5em;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    p:hover {
+        cursor: pointer;
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+    }
+
+    .perfumename  {
+        position: absolute;
+        padding-left: 1.8em;
+    
+        a {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// discover
+.discover  {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/pics/hero1.jpg);
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+
+    p {
+        letter-spacing: 0.3em;
+        font-weight: bold;
+    }
+
+    h3 a {
+        color: #f5eaea;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+    }
+}
+
+// women/men/unixes sections 
+.explore {
+    margin-top: 0;
+    padding-top: 0;
+    height: 100vh;
+    text-align: center;
+
+    img {
+        width: 70%;
+        padding: 3em;
+    }
+
+    h5 {
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        word-spacing: 0.5em;
+    }
+
+    p a {
+        font-size: 1rem;
+    }
+}
+
+.women-section {
+    h5 {
+        padding-top: 3em; 
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .left-side {
+        width: 55%;
+    }
+
+    .right-side {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        img {
+            padding-top: 6em;
+        }
+    }
+}
+
+.explore-btn {
+    a {
+        letter-spacing: 0.2em;
+        font-style: italic;
+        font-size: 1rem;
+        margin: 2em 0em;
+        background-color: #f7d8d5;
+        padding: 0.8em 2.5em;
+        border-radius: 1em;
+        border: 0.1em solid rgb(187, 182, 182);
+    }
+
+    & a:hover  {
+        background-color: #af1b3b;
+        color: #fff;
+    }
+}
+ 
+.men-section,
+.unisex-section {
+    h5 {
+        padding-top: 3em;
+        margin-bottom: 1.5em;
+    }
+  
+    img {
+        width: 60%;
+    }
+
+    .perfumes {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .explore-btn {
+        margin-top: 4rem;
+    }
+}
+
+// pricelist
+.pricelist {
+    text-align: center;
+  
+    .box {
+        border-right: 1px solid rgba(109, 108, 108, 0.411);
+    }
+    .img1 {
+        width: 40%;
+    }
+    .img2 {
+        width: 25%;
+        margin-top: 0.3em;
+    }
+    .img3 {
+        width: 23%;
+    }
+    h2 {
+        letter-spacing: 0.18em;
+        word-spacing: 0.2em;
+        font-style: italic;
+        font-weight: 500;
+        text-shadow: 5px 5px 5px #f1daeb;
+        color: #504242;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+    }
+    p {
+        letter-spacing: 0.15em;
+        font-size: 1.1rem;
+        margin-top: 1em ;
+        margin-bottom: 1em ;
+    }
+
+    .order-now {
+        display: flex;
+        justify-content: center;
+        margin-top: 1.8em;
+        margin-bottom: 1em;
+
+        a {
+            padding-top: 0.6em;
+            padding-left: 0.7em;
+        }
+    }
+
+    .fa-whatsapp {
+        color: #25D366;
+    }
+}
+
+
+
+// below phones
+@media only screen and (max-width: 290px){
+    /* discover section */
+    .discover-textbox h3 a {
+        font-size: 1rem;
+    }
+
+    /* women/men/unisex sections*/
+    .explore {
+        height: auto;
+        h5 {
+            margin-top: 0;
+            margin-bottom: 2em;
+            padding-top: 3em;
+        } 
+        img {
+            padding: 0;
+        }
+        .explore-btn a {
+            padding: 0em 1em;
+        }
+    }
+    .women-section  {
+        .left-side  {
+            display: none;
+        }
+        .right-side {
+            height: auto;
+            img {
+                padding-top: 0;
+            }
+        }
+        .img-and-text {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+    .men-section ,
+    .unisex-section {
+        margin-top: 3em;
+
+        img{
+            width: 100%;
+        }
+        .perfume-name {
+            width: 80%;
+        }
+    }
+
+}
+
+// phones
+@media (min-width: 290px) and (max-width: 600px) {
+    #bestsellers img {
+        padding: 0.5em; 
+    }
+
+    /* women/men/unisex sections*/
+    .explore {
+        height: auto;
+        h5 {
+            margin-top: 0;
+            margin-bottom: 2em;
+            padding-top: 3em;
+        } 
+        img {
+            padding: 0;
+        }
+        .explore-btn a {
+            padding: 0em 1em;
+        }
+    }
+    .women-section  {
+        .left-side  {
+            display: none;
+        }
+        .right-side {
+            height: auto;
+            img {
+                padding-top: 0;
+            }
+        }
+        .img-and-text {
+            width: 100%;
+            margin-bottom: 2em;
+        }
+    }
+    .men-section ,
+    .unisex-section {
+        margin-top: 3em;
+        img{
+            width: 100%;
+            padding: 1em;
+            max-width: 220px;
+        }
+        .perfume-name {
+            width: 80%;
+        }
+    }
+
+}
+
+/* tablests */
+@media (min-width: 601px) and (max-width: 1199px) {
+    /* women/men/unisex */
+    .explore h5 {
+        margin-top: 2em;
+        margin-bottom: 2em;
+    } 
+    .explore-btn a {
+        padding: 0.5em 1em;
+    }
+    .women-section  {
+        margin: 7em auto;
+        height: auto;
+        .left-side {
+            img {
+                width: 100%;
+            }
+        }
+        .right-side {
+            height: auto;
+            width: 30%;
+            justify-content:center;
+            margin-left: 2em;
+            img {
+                width: 100%;
+                padding: 1em ;
+            }
+        }
+    }
+    .men-section ,
+    .unisex-section {
+        height: auto;
+        margin-top: 3em;
+       img{
+        width: 100%;
+        }
+    }
+    .pricelist {
+        .img1 {
+            width: 30%;
+        }
+        .img2 {
+            width: 20%;
+            margin-top: 0.8em;
+        }
+        .img3 {
+            width: 20%;
+        }
+        .order-now p a {
+            font-size: 1.3em;
+        }
+        .order-now a {
+            padding-top: 01em;
+        }
+        
+    
+    }
+}
+
+// laptops
+@media only screen and (min-width: 1200px)  {
+    /* pricelist */
+    .pricelist {
+        margin: 0 auto;
+
+        h2 {
+            margin-top: 3em;
+        }
+        .img1 {
+            width: 20%;
+        }
+        .img2 {
+            width: 17%;
+            margin-top: 0.8em;
+        }
+        .img3 {
+            width: 17%;
+        }
+        .order-now p a {
+            font-size: 1.3em;
+        }
+        .order-now a {
+            padding-top: 1.1em;
+        }
+    }
+}

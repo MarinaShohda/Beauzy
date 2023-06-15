@@ -1,0 +1,480 @@
+// perfumes pages
+#perfume-page {
+    margin: 4em 5em;
+    padding: 5em;
+    .slider {
+        text-align: center;
+        padding-right: 3em;
+    }
+    img {
+        max-width: 330px;
+    }
+    .name-when-minimized {
+        display: none;
+    }
+    .perfume-details {
+        padding-left: 4em;
+        padding-right: 2em;
+    }
+    .name-and-price {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .perfumes-body {
+        h4 a {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            word-spacing: 0.2em;
+            font-family: 'Lato', sans-serif;
+            font-style: italic;
+            &:hover {
+                color: #f5466c;
+                text-shadow: 1px 1px red;}
+        }
+        .price {
+            padding: 0.5em 1.5em;
+            border-radius: 0.2em;
+        }
+        h1 {
+            font-weight: bold;
+            line-height: 1.5;
+            text-transform: uppercase;
+            font-family: 'Lato', sans-serif; 
+        
+        }
+        h5 a {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: bold;
+            line-height: 1.5;
+            color: #000000;
+            &:hover {
+                color: #f31a3f;
+                text-shadow: 1px 1px red;
+            }
+        }
+    }
+    .lined-box {
+        display: inline;
+        padding: 0.5em 1.2em;
+        background-color: #fff;
+        border: 0.1em solid #0000001e;
+        border-radius: 0.4em;
+        margin-right: 1em;
+    }
+    .ordernow {
+        display: flex;
+        padding-top: 2em;
+        p {
+            padding-right: 0.5em;
+            padding-top: 0.7em;
+            text-transform: uppercase;
+            font-style: italic;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+        
+    }
+    .buynow-whatsapp {
+        color: #25D366;
+    }
+
+
+}
+// find more sections
+.findmore-container  {
+    margin-top: 5em;
+    background-color: #fff8f8;
+    text-align: center;
+      .textbox p {
+        letter-spacing: 0.2em;
+        font-weight: bold;
+        padding-top: 2em;
+    }
+      .textbox  h2 {
+        letter-spacing: 0.25em;
+    }
+     .items {
+        padding: 4em;
+        display: flex;
+        justify-content: space-evenly;
+    }
+     .item {
+        width: 15%;
+    }
+     .items p {
+        letter-spacing: 0.05em;
+        word-spacing: 0.3em;
+        margin-top: 2em;
+    }
+     img {
+        border-radius: 0.6em;
+        width: 100%;
+    }
+
+}
+// brands
+#brands {
+    margin-top: 3em;
+    text-align: center;
+    .brandname {
+        width: 50%;
+        margin: 0 auto;
+    }
+    .brandname img {
+        width: 50%;
+        margin-top: 3em;
+    }
+     .brandname p {
+        margin-top: 1.5em;
+        font-style: italic;
+        font-size: 1.2rem;
+    }
+    
+    .container {
+        margin-top: 3em;
+    }
+    .items {
+        display: flex;
+        justify-content: space-evenly;  
+    }
+    .items img {
+        width: 50%;
+    }
+    .zoombox {
+        overflow: hidden;
+    }
+     .zoom {
+        transition: transform 0.2s;
+        
+    }
+    .zoom:hover {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (max-width: 290px){
+// single perfume pages
+    #perfume-page {
+         margin: 2em 0.5em;
+         padding: 0;
+         .name-when-minimized {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 2em;
+        }
+         .slider {
+            display: block;
+            width: 100%;
+            padding-left: 2em;
+            padding-right: 5em;
+            margin-bottom: 2em;
+        }
+        .carousel {
+            width: 80%;
+        }
+         .slider img {
+            width: 100%;
+        }
+       .perfume-details {
+            padding-left: 1em;
+            padding-right: 1.7em;
+            width: 100%;
+       }
+        .perfume-details h1 {
+            display: none;
+        }
+        .perfumes-body h4 {
+            margin-top: 0.5em;
+        }
+        .lined-box  {
+            margin-right: 0.6em;
+        }
+    
+     }
+ //  single brand page
+     #brands {
+         margin-top: 0em;
+          .brandname {
+            width: 70%;    
+        }
+         .brandname img {
+            width: 100%;
+        }
+         .brandname p {
+            margin-top: 1.2em;
+            font-size: 1rem;
+        }
+         .perfume {
+            width: 90%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+         .items img {
+            width: 80%;
+            /* min-width: 100px; */
+        }
+    
+         .textbox p,
+         .textbox a h5 b {
+            font-size: 1rem;
+        }
+     }
+     .findmore-container {
+        .items {
+            padding: 0em;
+            padding-top: 3em;
+        }
+        .item {
+            width: 30%;
+        }
+        .item p {
+            font-size: 0.8rem;
+        }
+     }
+ }
+ 
+@media (min-width: 290px) and (max-width: 600px) {
+// single perfume pages
+   #perfume-page {
+    margin: 2em 2em;
+    padding: 0;
+
+    .name-when-minimized {
+        display: block;
+        font-size: 1.2rem;
+        margin-bottom: 2em;
+    }
+    .slider {
+        display: block;
+        width: 100%;
+        padding-left: 2em;
+        padding-right: 5em;
+        margin-bottom: 2em;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .slider img {
+        width: 100%;
+        max-width: 305px;
+    }
+    .perfume-details {
+        width: 90%;
+        padding-left: 1em;
+        padding-right: 2em;
+        
+    }
+    .perfume-details h1 {
+        display: none;
+    }
+    .perfumes-body h4 {
+        margin-top: 0.5em;
+    }
+     .lined-box  {
+        margin-right: 0.6em;
+    }
+}
+// single brand page 
+#brands {
+    margin-top: 0em;
+
+    .brandname {
+        width: 70%;    
+    }
+    .brandname img {
+        width: 100%;
+        max-width: 245px;
+    }
+    .brandname p {
+        margin-top: 1.2em;
+        font-size: 1rem;
+    }
+    .perfume {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+    .items img {
+        width: 100%;
+        max-width: 115px;
+    }
+     .textbox p,
+     .textbox a h5 b {
+        font-size: 1rem;
+    }
+}
+
+}
+
+@media (min-width: 601px) and (max-width: 1199px) {
+ // single perfume pages
+    #perfume-page {
+        margin: 3em 2em;
+        padding: 0;
+
+        .name-when-minimized {
+            display: none;
+        }
+        .slider {
+            padding-right: 0;
+            margin-top: 2em;
+        }
+        .carousel {
+            width: 95%;
+        }
+        .slider img {
+            width: 100%;
+            max-width: 330px;
+        }
+        .perfume-details {
+            padding-left: 1em;
+            padding-right: 1.7em;
+            width: 45%;
+        }
+        .name-and-price {
+            display: block;
+        }
+    
+        .perfume-details h1 {
+            font-size: 1.2rem;
+            margin-bottom: 1em;
+        }
+        .perfumes-body h4 {
+            margin-top: 0.5em;
+        }
+        .lined-box  {
+            margin-right: 0.3em;
+        }
+    }
+// single brand page
+    #brands {
+        margin-top: 2em;
+            .brandname {
+            width: 50%;  
+                img {
+                width: 100%;
+                max-width: 270px;
+            }
+                p {
+                margin-top: 1.3em;
+                font-size: 1.1rem;
+            }  
+        }
+
+        .perfume {
+            width: 30%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+        .items img {
+            width: 80%;
+            max-width: 115px;
+        }
+
+        .textbox a h5 b{
+            font-size: 1.3rem;
+        }
+        .textbox p{
+            font-size: 1.2rem;
+        }
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  // single perfume pages
+    #perfume-page {
+        margin: 4em 1em;
+        padding: 0;
+        width: 95%;
+
+        .perfume-container {
+            padding-right: 0;
+            margin-right: 0;
+        }
+        .slider {
+            padding-right: 2em;
+            padding-left: 2em;
+            margin-top: 2em;
+            width: 45%;
+        }
+        .perfume-details {
+            padding-left: 1em;
+            padding-right: 0;
+            margin-right: 0;
+            width: 45%;
+        }
+    }
+
+// single brand pages
+    #brands .items img {
+        width: 80%;
+    }
+    .findmore-container .item {
+        width: 20%;  
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+// single brand pages
+    #brands {
+        .brandname img {
+            width: 50%;
+            margin-top: 2em;
+        }
+         .items img {
+            width: 80%;
+        }
+    }
+   .findmore-container .item {
+       width: 17%;  
+   }
+   
+}
+
+@media only screen and (min-width: 1200px)  {
+// single brand pages
+       #brands {
+        .perfume {
+            width: 30%;
+            margin: 0 auto;
+            margin-bottom: 2em;
+        }
+        .items img {
+            width: 80%;
+            max-width: 115px;
+        }
+       }
+}
+
+
+//    find more
+@media (min-width: 290px) and (max-width: 600px) { 
+    .findmore-container .items {
+        padding: 0em;
+        padding-top: 3em;
+        .item {
+            width: 30%;
+        }
+        .item p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1199px) {
+    .findmore-container .items {
+        padding: 0em;
+        padding-top: 3em;
+        .item {
+            width: 25%;
+        }
+        .item p {
+            font-size: 1rem;
+        }
+    }
+}
